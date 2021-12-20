@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import SelecionarAssento from "./SelecionarAssento";
 
-function ContainerAssentos({ info, selecionados, setSelecionados }) {
+function ContainerAssentos({ info, selecionados, setSelecionados, idSelecionados, setIdSelecionados }) {
     return (
         <Container>
             {info.seats.map((assento) => {
@@ -10,7 +10,7 @@ function ContainerAssentos({ info, selecionados, setSelecionados }) {
                     <Assento
                         className={assento.isAvailable
                             ? 'disponivel' : 'indisponivel'}
-                        onClick={(e) => SelecionarAssento(e, assento, selecionados, setSelecionados)}
+                        onClick={(e) => SelecionarAssento(e, assento, selecionados, setSelecionados, idSelecionados, setIdSelecionados)}
                     >
                         {assento.name}
                     </Assento>
