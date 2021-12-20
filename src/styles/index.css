@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    color: red;
+    font-family: 'Roboto', sans-serif;    
 }
+
+a {
+    text-decoration: none;
+  }
