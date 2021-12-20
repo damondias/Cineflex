@@ -3,7 +3,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Header from './Header/Header';
 import Catalogo from "./Catalogo/Catalogo";
 import Filme from "./Dados/Filme";
-import Sessao from "./Sessao/Sessao";
+import Sessao from "./Sessao";
 
 function App() {
   const [idFilme, setIdFilme] = useState(null);
